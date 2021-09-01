@@ -1,0 +1,275 @@
+<!DOCTYPE html-->
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+header{
+display:flex;
+gap:700px;
+}
+.dropbtn{
+padding:3px;
+float:right;
+}
+.menu{
+position:relative;
+width:500px;
+margin:left:200px;
+float:right;
+display:inline-block;
+height:50px;
+
+}
+.menu ul{
+float:left;
+}
+
+.submenu ul{
+display:none;
+position:absolute;
+background-color:black;
+width:300px;
+margin-left:10px;
+}
+.submenu ul li{
+border-bottom:1px solid white;
+color:white !important;
+padding:10px;
+display:block;}
+
+.submenu ul li a:hover{
+color:skyblue;}
+.submenu ul li a:link{
+text-decoration:none;}
+.menu:hover .submenu ul{
+display:block;
+float:left;}
+
+.menu:hover .dropbtn{
+backgroung-color:grey;}
+
+.body{
+width:100%;
+height:100%;
+padding:20px;
+display:flex;
+gap:10px;
+}
+
+.leftside{
+height:80%;
+width:25%;
+font-size:12px;
+position:relative;
+}
+
+.img{
+height:40%;
+width:30%;
+border-radius:50%;
+
+}
+.txtcolor{
+color:grey;
+}
+.rightside{
+width:25%;
+position:relative;
+
+}
+.button{
+background-color:rgb(255,33,118);
+width:180px;}
+
+.searchbox {
+border-bottom:2px solid black;
+
+}
+
+.searchbox form{
+display:flex;
+height:18px;
+font:size:30px;
+font:width:30;
+font:height:30px;}
+.detail ul li{
+list-style-type:none;
+border-bottom:1px solid black;
+display:flex;
+gap:10px;
+font-size:13px;
+}
+
+
+.medialink .fa {
+  padding:20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.center{
+width:650px;
+padding:1px;
+font-size:35px;
+overflow:auto;
+
+
+}
+.centerdiv{
+text-align:center;
+margin:auto;
+}
+
+.medialink{
+display:flex;
+width:180px;
+height:60px;
+
+}
+
+.medialink a{
+margin:auto;
+width:12px;
+}
+.detail ul li{
+display:flex;}
+.detail ul li a{
+display:flex;}
+.detail ul li a:link{
+text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header>
+<div>
+<h1 style="display:flex;">MY <span style="color:pink">Portal</span></h1></div>
+<div class="menu" >
+
+<button style="height:30px;width:50px" class="dropbtn"><b>MENU<b></button>
+<div class="submenu">
+<ul>
+<li><a href="">MY PITCH</a></li>
+<li><a href="">MY ACTIVITY</a></li>
+<li><a href="">RESOURCES</a></li>
+<li><a href="">CLUB NEWS</a></li>
+<li><a href="">LIVE EVENTS</a></li>
+</ul>
+</div>
+
+</div>
+</header>
+<div style="width=100%;height=30px;background-color:grey;">
+
+<h2 id="home" style="text-align:center;color:pink"><b>HOME<b></h2>
+
+</div>
+
+
+<div class="body">
+<div class="leftside">
+ <img class="img" src="" alt="img"> 
+<p>K TAMILKUMARAN : WRITER</p><br>
+<p class="txtcolor">Active stories:2</p><br>
+<p class="txtcolor">Active calls:0</p><br>
+<p class="txtcolor">Unread Message:0</p><br>
+
+<div class="medialink">
+<a href="#" class="fa fa-facebook "></a>
+<a href="#" class="fa fa-twitter "></a>
+<a href="#" class="fa fa-google "></a>
+<br>
+<br>
+
+</div><!cls-media div close-->
+<a href=""><button class="button">view oppournitites Matching</button></a>
+<br>
+<br>
+<a href=""><button class="button">View Matching Stories</button></a>
+
+</div><!cls-leftside div close-->
+
+
+
+<div class="center">
+<div class="centerdiv">
+<span><h3 style="color:rgb(255,33,97)">call Talents</h3></span>
+<form action="">
+<select name="talent" id="talent">
+<option value="choose call for">choose call for</option>
+<option value="story writing">story writing</option>
+<option value="screen writing">screen writing</option>
+<option value="dialog writing">dialog writing</option>
+<option value="lyrics writing">lyrics writing</option>
+<option value="story discussiion">story discussiion</option>
+<option value="script doctoring">script doctoring</option>
+</select>
+</form>
+<h4>choose your specification</h4>
+<a href=""><button class="button">call</button></a>
+</div>
+<div class="centerdiv">
+<span><h5 style="color:rgb(255,33,97)">pick your story</h5></span>
+<input type="text" placeholder="story Title">
+<h6>choose your specification</h6>
+<a href=""><button class="button">pick</button></a>
+</div>
+
+<div style="display:block" class="centerdiv">
+<span><h6 style="color:rgb(255,33,97)">Glimpses</h6></span>
+<div style="font-size:10px">
+<input type="radio" id="people i follow" value="people i follow">
+<lable for="people i follow">People I Follow</lable>
+
+<input type="radio" id="Recent" value="Recent">
+<lable for="Recent">Recent</lable><br>
+
+<input type="radio" id="Most liked" value="Most liked">
+<lable for="Most liked">Most liked</lable>
+<input type="radio" id="Upon My Interest" value="Upon My Interest">
+<lable for="Upon My Interest">Upon My Interest</lable>
+</div>
+</div>
+</div>
+
+
+
+<div class="rightside">
+<p><b>FIND PEOPLE<b></p>
+
+<div class="searchbox">
+<form>
+<input type="text" placeholder="search" name="search">
+
+<button style="width:30px"type="submit"><i class="fa fa-search fa-sm" aria-hidden="true"></i></button>
+
+</form>
+</div>
+<p><b>Top Peoples<b><p>
+<div class="detail">
+<ul>
+<li><a href=""><img src="" alt="profile"><span style="gap=50px"></span><p>tamil</p><span><br><p>writer</p></span></a></li>
+<li><a href=""><img src="" alt="profile"><span style="gap=50px"></span><p>tamil</p><span><br><p>writer|Director</p></span></a></li>
+<li><a href=""><img src="" alt="profile"><span style="gap=50px"></span><p>tamil</p><span><br><p>admin</p></span></a></li>
+<li><a href=""><img src="" alt="profile"><span style="gap=50px"></span><p>tamil</p><span><br><p>Director</p></span></a></li>
+<li><a href=""><img src="" alt="profile"><span style="gap=50px"></span><p>tamil</p><span><br><p>producer</p></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+<footer style="background-color:black;height:70px" >
+<h7 style="color:white">2021 MY PORTAL. All rights reserved</h7>
+<a href="#home" style="float:right"><h8 style="color:white">home</h8></a>
+</footer>
+</html>
